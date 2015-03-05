@@ -9,7 +9,6 @@ Find the sum of all the numbers less than 108 that are both palindromic and can 
 #include <fstream>
 #include <sstream>
 #include <string>
-#include <vector>
 
 #define MAX 100000000 //10^8
 bool storage[MAX] = {false};
@@ -19,7 +18,7 @@ bool palindromic( long long tester,int base);
 int main()
 {
 	long long sum = 0,running_num_sum=0;
-	for(long long i = 1;i<10000;i++)//Remember, problem only deals with POSITIVE squares!
+	for(long long i = 1;i<10000;i++)//Remember, problem only deals with POSITIVE squares! Also need sum =i^2, to avoid counting a square as a sum of two numbers (this is where over counting had been coming from.
 	{	
 		sum=i*i;
 		for(long long j = i+1;j<10000;j++)
@@ -37,6 +36,7 @@ int main()
 	std::cout<<"The sum of the numbers that meet both of these criteria is "<<running_num_sum<<std::endl;
 	return 0;
 }
+
 
 
 bool palindromic( long long tester,int base)
