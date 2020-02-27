@@ -1,2 +1,2 @@
-# Project_Euler_Problem1
-My solution to Problem 1 on Project Euler. Written in C++.
+# Project Euler
+This repository contains solutions, written in C++, to assorted Project Euler problems. To see the original problem statements, please visit [https://projecteuler.net/](Project Euler).
